@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.SpaServices.Webpack;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Online.Store.DocumentDB;
 
 namespace Online_Store
 {
@@ -53,6 +54,8 @@ namespace Online_Store
                     name: "spa-fallback",
                     defaults: new { controller = "Home", action = "Index" });
             });
+
+            DocumentDBInitializer.Initialize(Configuration);
         }
     }
 }
