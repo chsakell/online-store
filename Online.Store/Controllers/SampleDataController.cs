@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Online_Store.Controllers
 {
+    // SampleDataController
     [Route("api/[controller]")]
     public class SampleDataController : Controller
     {
